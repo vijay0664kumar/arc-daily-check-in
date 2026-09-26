@@ -1,14 +1,14 @@
-# 📅 Arc Daily Check-In
+# Arc Daily Check-In
 
 An onchain daily check-in application built on Arc Testnet using Arc Studio.
 
-Users connect their wallet and complete a daily check-in directly through a smart contract, creating a simple example of recurring onchain user interactions.
+Users connect their wallet and complete a daily check-in through a smart contract, demonstrating a simple recurring onchain interaction.
 
-## 🌐 Live Demo
+## Live Demo
 
 https://astonishing-beijinho-f9698c.netlify.app/
 
-## 📜 Smart Contract
+## Smart Contract
 
 **Network:** Arc Testnet
 
@@ -16,17 +16,17 @@ https://astonishing-beijinho-f9698c.netlify.app/
 
 `0x6863584402f61ec2b00ce0d4ea36a2af8effa826`
 
-## ✨ Features
+## Features
 
-- 🔗 Wallet connection
-- 📅 Daily onchain check-in
-- ⏱️ Daily check-in tracking
-- ⛓️ Smart contract interaction
-- 🌐 Built on Arc Testnet
-- 🔒 Non-custodial
-- 🧪 Built and tested with Arc Studio
+- Wallet connection
+- Daily onchain check-in
+- Check-in tracking
+- Smart contract interaction
+- Built on Arc Testnet
+- Non-custodial
+- Built and tested with Arc Studio
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Arc Testnet
 - Solidity
@@ -37,7 +37,7 @@ https://astonishing-beijinho-f9698c.netlify.app/
 - Bun
 - Foundry
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 arc-daily-check-in/
