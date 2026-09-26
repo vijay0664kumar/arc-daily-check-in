@@ -14,7 +14,7 @@ https://astonishing-beijinho-f9698c.netlify.app/
 
 **Contract Address:**
 
-`0x6863584402f61ec2b00ce0d4ea36a2af8effa826`
+0x6863584402f61ec2b00ce0d4ea36a2af8effa826
 
 ## Features
 
@@ -39,7 +39,7 @@ https://astonishing-beijinho-f9698c.netlify.app/
 
 ## Project Structure
 
-```text
+``text
 arc-daily-check-in/
 ├── contracts/        # Solidity smart contracts
 ├── scripts/          # Deployment and utility scripts
