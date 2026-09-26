@@ -1,0 +1,238 @@
+{
+  "contractAddress": "0x6863584402f61ec2b00ce0d4ea36a2af8effa826",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/ArcDailyCheckIn.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/ArcDailyCheckIn.sol/ArcDailyCheckIn.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0x6863584402f61ec2b00ce0d4ea36a2af8effa826"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0x6863584402f61ec2b00ce0d4ea36a2af8effa826",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0x6863584402f61ec2b00ce0d4ea36a2af8effa826",
+      "txHash": "0x6206a416d7a156305509d2f49f72e1d4c6db95844f0681829be17ed30cbe6603",
+      "deployedAt": "2026-09-24T22:16:11.477Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "function",
+      "name": "CHECK_IN_WINDOW",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "MAX_RECENT_CHECK_INS",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "STREAK_BREAK_WINDOW",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "canCheckIn",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "checkIn",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "getRecentCheckIns",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "entries",
+          "type": "tuple[]",
+          "internalType": "struct ArcDailyCheckIn.CheckInEntry[]",
+          "components": [
+            {
+              "name": "user",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "timestamp",
+              "type": "uint256",
+              "internalType": "uint256"
+            }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getUserStats",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "userTotalCheckIns",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "userStreak",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "userLastCheckIn",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "canCheckInNow",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "lastCheckIn",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "streak",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "totalCheckIns",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "event",
+      "name": "CheckedIn",
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "timestamp",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "totalCheckIns",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "streak",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "AlreadyCheckedInToday",
+      "inputs": []
+    }
+  ]
+}
